@@ -15,6 +15,6 @@ services:
       - db
   ng:
     container_name: ng
-    build: angular
+    build: angular-app
     ports:
       - "8080:80"
