@@ -16,9 +16,9 @@ RUN npm install --prefix angular-app
 COPY . /app
 
 # Build app
-RUN npm run build --outputPath=./angular-app/dist/out/
+RUN npm run build
 
-
+RUN ls ./dist/angular-app
 
 ### Stage 2: delivery ###
 
@@ -28,7 +28,7 @@ FROM nginx:1.15.7-alpine
 RUN rm -rf /usr/share/nginx/html/*
 
 # Copy output directory from builder to nginx image.
-COPY --from=builder /app/angular-app/dist/out/ /usr/share/nginx/html/
+COPY --from=builder /app/dist/angular-app/ /usr/share/nginx/html/
 
 # Copy nginx configuration file.
 COPY ./nginx/nginx.conf /etc/nginx/conf.d/default.conf
