@@ -13,7 +13,8 @@ const routes: Routes = [
     canActivate: [ AuthGuard ]
   },
   {
-    path: 'callback', component: CallbackComponent
+    path: 'callback',
+    component: CallbackComponent
   },
 ];
 

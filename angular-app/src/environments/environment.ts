@@ -8,7 +8,7 @@ export const environment = {
     clientID: 'sIwfp5i7AWIDx1coA2kmPQr012975Dpx',
     domain: 'dev-ane6q2he.us.auth0.com', // e.g., you.auth0.com
     audience: 'https://dev-ane6q2he.us.auth0.com/api/v2/',
-    auth0RedirectUri: 'http://localhost:4200', // URL to return to after auth0 login
+    auth0RedirectUri: 'http://localhost:4200/callback', // URL to return to after auth0 login
     auth0ReturnTo: 'http://localhost:4200', // URL to return to after auth0 logout
     scope: 'openid profile'
   }
