@@ -6,11 +6,13 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TaskListComponent } from './task-list/task-list.component';
+import { CallbackComponent } from './callback/callback.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TaskListComponent
+    TaskListComponent,
+    CallbackComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,8 @@
 Django==2.1.4
 djangorestframework==3.9.0
 django-cors-headers==3.2.1
+djangorestframework-jwt
+request
+cryptography
+python-jose
 psycopg2

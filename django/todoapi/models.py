@@ -9,6 +9,7 @@ class Task(models.Model):
     """
     title = models.CharField(max_length=50)
     content = models.CharField(max_length=50)
+    created_by = models.CharField(max_length=200)
     created_on = models.DateField(default=datetime.today)
     due_date = models.DateField(default=datetime.today)
 
